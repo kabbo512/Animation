@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       @keyframes slidein {
+           0%{
+            left: 0;
+           }
+           100%{
+               left: 800px;
+
+           }
+       }
+        .stage{
+            background-color:lightcyan;
+            height: 500px;
+            min-width: 800px;
+        }
+        .ball .img {
+            width: 400px;
+            height: 400px;
+            border-radius: 200%;
+          
+            position:absolute;
+        }
+        .stage:hover .ball .img{
+            animation: slidein 3s ease-in-out 1s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tap me, I will move 😊</h1>
+    <div class="stage">
+        <div class="ball">
+            <img class="img" src="photos/ff.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
